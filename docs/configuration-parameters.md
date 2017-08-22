@@ -75,16 +75,12 @@ This section provides the details of all the configurations required for CarbonD
 | carbon.horizontal.UPDATE.compaction.threshold | 1 | This property specifies the threshold limit on number of UPDATE delta files within a segment. In case the number of delta files goes beyond the threshold, the UPDATE delta files within the segment becomes eligible for horizontal compaction and compacted into single UPDATE delta file. | Values between 1 to 10000. |
 | carbon.horizontal.DELETE.compaction.threshold | 1 | This property specifies the threshold limit on number of DELETE delta files within a block of a segment. In case the number of delta files goes beyond the threshold, the DELETE delta files for the particular block of the segment becomes eligible for horizontal compaction and compacted into single DELETE delta file. | Values between 1 to 10000. |
 
-  
 
 * **Query Configuration**
   
 | Parameter | Default Value | Description | Range |
 |--------------------------------------|---------------|---------------------------------------------------|---------------------------|
 | carbon.number.of.cores | 4 | Number of cores to be used while querying. |  |
-| carbon.inmemory.record.size | 120000 | Number of records to be in memory while querying. | Min=100000 and Max=240000 |
-| carbon.enable.quick.filter | false | Improves the performance of filter query. |  |
-| no.of.cores.to.load.blocks.in.driver | 10 | Number of core to load the blocks in driver. |  |
 
 
 ##   Miscellaneous Configuration
@@ -111,7 +107,7 @@ This section provides the details of all the configurations required for CarbonD
 | carbon.load.metadata.lock.retries | 3 | Maximum number of retries to get the metadata lock for loading data to table. |
 | carbon.load.metadata.lock.retry.timeout.sec | 5 | Interval between the retries to get the lock. |
 | carbon.tempstore.location | /opt/Carbon/TempStoreLoc | Temporary store location. By default it takes System.getProperty("java.io.tmpdir"). |
-| carbon.load.log.counter | 500000 | Data loading records count logger. |   
+| carbon.load.log.counter | 500000 | Data loading records count logger. |
 
 
 * **Compaction Configuration**

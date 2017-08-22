@@ -56,11 +56,8 @@ carbon.major.compaction.size=1024
 #Number of cores to be used for loading index into memory
 carbon.number.of.cores=4
 #Number of records to be in memory while querying :MIN=100000:MAX=240000
-carbon.inmemory.record.size=120000
 #Improves the performance of filter query
-carbon.enable.quick.filter=false
 ##number of core to load the blocks in driver
-#no.of.cores.to.load.blocks.in.driver=10
 
 #################### Extra Configuration ##################
 ##Timestamp format of input data used for timestamp data type.
