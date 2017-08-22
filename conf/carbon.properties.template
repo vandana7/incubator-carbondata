@@ -88,7 +88,6 @@ carbon.number.of.cores=4
 ##Temporary store location, By default it will take System.getProperty("java.io.tmpdir")
 #carbon.tempstore.location=/opt/Carbon/TempStoreLoc
 ##data loading records count logger
-#carbon.load.log.counter=500000
 ##To dissable/enable carbon block distribution
 #carbon.custom.block.distribution=false
 ######## Compaction Configuration ########
@@ -105,9 +104,7 @@ carbon.number.of.cores=4
 #carbon.enableMinMax=true
 ######## Global Dictionary Configurations ########
 ##To enable/disable identify high cardinality during first data loading
-#high.cardinality.identify.enable=true
 ##threshold to identify whether high cardinality column
-#high.cardinality.threshold=1000000
 ##Percentage to identify whether column cardinality is more than configured percent of total row count
 #high.cardinality.row.count.percentage=80
 ##The property to set the date to be considered as start date for calculating the timestamp.
